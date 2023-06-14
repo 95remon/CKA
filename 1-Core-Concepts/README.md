@@ -29,3 +29,8 @@
 
 - We are working with containers, Containers are everywhere, so we need everything to be container compatible, So we need these software that can run containers and that's the container runtime engine, a popular one being Docker.So we need Docker, or it's supported equivalent installed on all the nodes in the cluster, including the master nodes, if you wish to host the controlling components as containers. Now, it doesn't always have to be Docker. Kubernetes supports other runtime engines as well like ContainerD, a Rocket.
 
+- The `Worker Node` Contains:
+  - `Kubelet`  is an agent that runs on each node in a cluster. It listens for instructions from the Kube API server and deploys or destroys containers on the nodes as required.
+  - `Kube Proxy Service` Communication between worker nodes and ensures that the necessary rules are in place on the worker nodes to allow the containers running on them to reach each other.
+
+![img](./etc/Screenshot%202023-06-14%20205018.png)
