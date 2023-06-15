@@ -1,4 +1,4 @@
-# ⭐ Core-Concepts
+# ⭐ Core Concepts
 
 - In the first section, we start with the core concepts.
 
@@ -34,3 +34,9 @@
   - `Kube Proxy Service` Communication between worker nodes and ensures that the necessary rules are in place on the worker nodes to allow the containers running on them to reach each other.
 
 ![img](./etc/Screenshot%202023-06-14%20205018.png)
+
+---
+
+- `Container Runtime Interface (CRI)` CRI allowed any vendor to work as a container runtime for Kubernetes as long as they adhere to the OCI standards.
+
+- `Open Container Initiative (OCI)` 
