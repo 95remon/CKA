@@ -4,7 +4,7 @@
 
 - We look at the cluster architecture at a high level and then look at some of the API primitives, such as the basic concepts like Pods, ReplicaSets, Deployments followed by services.
 
-## 📝 Cluster Architecture 
+## 📝 Cluster Architecture
 
 - Kubernetes Architecture
 - ETCD in Kubernetes
