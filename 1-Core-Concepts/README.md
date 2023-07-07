@@ -36,7 +36,32 @@
 ![img](./etc/Screenshot%202023-06-14%20205018.png)
 
 ---
+### Docker-vs-ContainerD
 
 - `Container Runtime Interface (CRI)` CRI allowed any vendor to work as a container runtime for Kubernetes as long as they adhere to the OCI standards.
 
-- `Open Container Initiative (OCI)` 
+- `Open Container Initiative (OCI)` it consists of an image spec and a runtime spec. Image spec means the specifications on how an image should be built,and the runtime spec defined the standards on how any container runtime should be developed.
+
+- Docker consists of multiple tools that are put together.
+For example, the `Docker CLI`, the `Docker API`,the build tools that help in building images.There was support for `volumes`, `auth`, `security`, and finally, also the container runtime called runc and the `demon` that managed runc, and that was called `containerd`.
+
+- So you can now install containerd on its own without having to install Docker itself. So if you don't really need Docker's other features you could ideally just install containerd alone.
+
+- Now once you install containerd, it comes with a command line tool called `ctr`, and this tool is solely made for debugging containerd
+
+- `CRI` It's only to be used for some special debugging purposes.
+
+- So a better alternative recommended is the nerd control tool or `nerdctl` tool.
+
+- another command line utility known as `crictl` or cri control.
+
+- So the cri control is a command line utility that is used to interact with the CRI compatible container runtime. So this is kind of an interaction from the Kubernetes perspective. So this tool is kind of developed and maintained by the Kubernetes community, and this tool works across all the different container runtimes.
+
+- It's only to be used for some special debugging purposes.
+
+![ContainerD](./etc/ContainerD.png)
+
+---
+
+### ETCD For Beginners
+
